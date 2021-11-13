@@ -1,0 +1,5 @@
+.navbar-nav .nav-item .nav-link {
+  &:hover {
+    border-bottom: solid 2px var(--border-bottom);
+  }
+}
