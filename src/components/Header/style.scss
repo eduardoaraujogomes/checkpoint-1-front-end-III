@@ -1,5 +1,23 @@
-.navbar-nav .nav-item .nav-link {
-  &:hover {
-    border-bottom: solid 2px var(--border-bottom);
+#header {
+  width: 100%;
+  background-color: transparent;
+  transition: background ease-in-out 0.2s;
+
+  .navbar-collapse {
+    width: auto;
+  }
+
+  .nav-link {
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0;
+    margin: 0 15px;
+    color: var(--support);
+    border-bottom: solid 4px transparent;
+
+    &:hover {
+      border-bottom: solid 4px var(--border);
+      color: var(--text);
+    }
   }
 }

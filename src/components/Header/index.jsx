@@ -1,51 +1,14 @@
 import React, { useState } from 'react';
-
+import './style.scss';
 import Svg from '../Svg';
 import logo from '../../assets/logo.png';
+import { recValue1, recValue2 } from './recValues';
 
 function Header() {
-  const [rec1, rec2] = [
-    <>
-      <rect
-        x='12'
-        y='20'
-        width='24'
-        height='2'
-        fill='var(--primary-color)'
-      ></rect>
-      <rect
-        x='20'
-        y='26'
-        width='16'
-        height='2'
-        fill='var(--primary-color)'
-      ></rect>
-    </>,
-    <>
-      <rect
-        x='16.9399'
-        y='15.5309'
-        width='22'
-        height='2'
-        fill='var(--primary-color)'
-        transform='rotate(45 16.9399 15.5309)'
-      ></rect>
-      <rect
-        x='15.5257'
-        y='31.0872'
-        width='22'
-        height='2'
-        fill='var(--primary-color)'
-        transform='rotate(-45 15.5257 31.0872)'
-      ></rect>
-    </>,
-  ];
-
-  const [svg, setSvg] = useState(rec1);
+  const [rec, setRec] = useState(recValue1);
 
   const change = () => {
-    console.log(svg);
-    setSvg(svg === rec1 ? rec2 : rec1);
+    setRec(rec === recValue1 ? recValue2 : recValue1);
   };
 
   return (
@@ -65,18 +28,18 @@ function Header() {
               className='navbar-toggler'
               type='button'
               data-bs-toggle='collapse'
-              data-bs-target='#navbarSupportedContent'
-              aria-controls='navbarSupportedContent'
+              data-bs-target='#navbarNav'
+              aria-controls='navbarNav'
               aria-expanded='false'
               aria-label='Toggle navigation'
             >
-              <Svg svg={svg} />
+              <Svg rec={rec} />
             </button>
             <div
-              className='collapse navbar-collapse'
-              id='navbarSupportedContent'
+              className='collapse navbar-collapse justify-content-end'
+              id='navbarNav'
             >
-              <ul className='navbar-nav me-auto mb-2 mb-lg-0'>
+              <ul className='navbar-nav'>
                 <li className='nav-item'>
                   <a
                     className='nav-link active'

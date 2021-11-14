@@ -1,28 +1,40 @@
-@import url('./bootstrap.min.css');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 :root {
-  --primary-color: #6c63ff;
-  --secondary-color: #121214;
-  --text-primary: #929296;
+  --primary: #8257e5;
+  --background: #121214;
+  --support: #737380;
+  --black: #09090a;
+  --text: #a8a8b3;
   --btn-primary: #9466ff;
-  --border-bottom: #9466ff;
+  --btn-hover: #9466ff;
+  --white: #fff;
+  --border: #6833e4;
 }
 
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--secondary-color);
-  color: var(--text-primary) !important;
+  background-color: var(--background);
+  color: var(--text);
 }
-a {
-  color: var(--text-primary) !important;
-}
-button:focus {
-  outline: var(--border-bottom) !important;
+
+textarea:hover,
+input:hover,
+textarea:active,
+input:active,
+textarea:focus,
+input:focus,
+button:focus,
+button:active,
+button:hover,
+label:focus,
+.btn:active,
+.btn.active {
+  outline: 0px !important;
+  -webkit-appearance: none;
+  box-shadow: none !important;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Svg = ({ svg }) => {
+export const Svg = ({ rec }) => {
   return (
     <svg
       width='48'
@@ -9,7 +9,7 @@ export const Svg = ({ svg }) => {
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
     >
-      {svg}
+      {rec}
     </svg>
   );
 };
