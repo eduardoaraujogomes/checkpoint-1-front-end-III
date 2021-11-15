@@ -6,7 +6,7 @@ export default function Banner() {
   return (
     <>
       <div id='banner'>
-        <div className='container pt-5'>
+        <div className='container pt-5 pb-5'>
           <div className='row'>
             <div className='col-md-4 align-self-center mb-md-0 mb-4'>
               <h1>Eduardo de Araújo Gomes Filho</h1>

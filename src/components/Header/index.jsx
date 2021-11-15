@@ -17,11 +17,7 @@ function Header() {
         <div className='container'>
           <nav className='navbar navbar-expand-lg '>
             <a className='navbar-brand' href='https://'>
-              <img
-                src={logo}
-                alt='logo'
-                style={{ width: '100px', height: '100px' }}
-              />
+              <img src={logo} alt='logo' style={{ width: '12rem' }} />
             </a>
             <button
               onClick={change}

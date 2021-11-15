@@ -49,7 +49,8 @@ label:focus,
   background-color: var(--btn-primary);
   border-color: var(--btn-primary);
 
-  &:hover {
+  &:hover,
+  &:active {
     background-color: var(--btn-hover);
     border-color: var(--btn-hover);
   }
@@ -59,7 +60,8 @@ label:focus,
   border-color: var(--btn-primary);
   color: var(--btn-primary);
 
-  &:hover {
+  &:hover,
+  &:active {
     background-color: var(--btn-hover);
     border-color: var(--btn-hover);
   }

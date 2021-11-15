@@ -1,6 +1,10 @@
 #banner {
-  background: url(../../assets/banner.jpg) no-repeat center bottom;
-  background-size: cover;
+  background-color: var(--primary);
+  background-image: linear-gradient(
+    326deg,
+    var(--primary) 0%,
+    var(--black) 74%
+  );
   color: var(--white);
 
   h1 {
