@@ -24,7 +24,7 @@ export default function About() {
                 href='https//'
                 className='btn btn-primary button button-primary'
               >
-                getting in touch
+                get in touch
               </a>
             </div>
           </div>
