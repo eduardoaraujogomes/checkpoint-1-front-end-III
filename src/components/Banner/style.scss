@@ -1,0 +1,18 @@
+#banner {
+  background: url(../../assets/banner.jpg) no-repeat center bottom;
+  background-size: cover;
+  color: var(--white);
+
+  h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  img[alt='developer'] {
+    width: 600px;
+  }
+}

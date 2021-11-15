@@ -10,10 +10,11 @@
   .nav-link {
     text-transform: uppercase;
     font-weight: 500;
-    padding: 0;
+    padding: 0 0 4px 0;
     margin: 0 15px;
     color: var(--support);
     border-bottom: solid 4px transparent;
+    transition: all ease-in-out 0.5s;
 
     &:hover {
       border-bottom: solid 4px var(--border);

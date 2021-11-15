@@ -6,7 +6,7 @@
   --black: #09090a;
   --text: #a8a8b3;
   --btn-primary: #9466ff;
-  --btn-hover: #9466ff;
+  --btn-hover: #6833e4;
   --white: #fff;
   --border: #6833e4;
 }
@@ -37,4 +37,30 @@ label:focus,
   outline: 0px !important;
   -webkit-appearance: none;
   box-shadow: none !important;
+}
+
+.button {
+  text-transform: lowercase;
+  font-weight: 500;
+  padding: 0.375rem 1.4rem;
+}
+
+.button-primary {
+  background-color: var(--btn-primary);
+  border-color: var(--btn-primary);
+
+  &:hover {
+    background-color: var(--btn-hover);
+    border-color: var(--btn-hover);
+  }
+}
+
+.button-primary-outline {
+  border-color: var(--btn-primary);
+  color: var(--btn-primary);
+
+  &:hover {
+    background-color: var(--btn-hover);
+    border-color: var(--btn-hover);
+  }
 }

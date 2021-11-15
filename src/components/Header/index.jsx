@@ -15,7 +15,7 @@ function Header() {
     <>
       <div id='header'>
         <div className='container'>
-          <nav className='navbar navbar-expand-lg navbar-light '>
+          <nav className='navbar navbar-expand-lg '>
             <a className='navbar-brand' href='https://'>
               <img
                 src={logo}
