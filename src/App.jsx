@@ -1,6 +1,7 @@
 import Header from './components/Header';
 import Banner from './components/Banner';
 import About from './components/About';
+import Tecnologies from './components/Technologies';
 import './App.scss';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Banner />
       <About />
+      <Tecnologies />
     </>
   );
 }

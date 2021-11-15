@@ -5,7 +5,7 @@ import developer from '../../assets/developer.svg';
 export default function Banner() {
   return (
     <>
-      <div id='banner'>
+      <div id='banner' className='block'>
         <div className='container pt-5 pb-5'>
           <div className='row'>
             <div className='col-md-4 align-self-center mb-md-0 mb-4'>
@@ -15,13 +15,13 @@ export default function Banner() {
                 href='https://'
                 className='btn btn-primary button button-primary d-lg-inline-block d-block mb-lg-0 mb-2 mr-2'
               >
-                Saiba mais
+                about
               </a>
               <a
                 href='https://'
                 className='btn btn-outline-primary button d-lg-inline-block button-primary-outline d-block'
               >
-                Contato
+                Contact
               </a>
             </div>
             <div className='col-md-8 align-self-center text-center'>

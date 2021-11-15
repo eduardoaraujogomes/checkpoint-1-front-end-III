@@ -66,3 +66,25 @@ label:focus,
     border-color: var(--btn-hover);
   }
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: var(--support);
+  font-weight: 400;
+}
+
+.block {
+  margin-bottom: 7.5rem;
+}

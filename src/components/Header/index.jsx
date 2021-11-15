@@ -42,7 +42,7 @@ function Header() {
                     aria-current='page'
                     href='https://'
                   >
-                    About me
+                    About
                   </a>
                 </li>
                 <li className='nav-item'>
@@ -69,7 +69,7 @@ function Header() {
                     aria-current='page'
                     href='https://'
                   >
-                    Contact me
+                    Contact
                   </a>
                 </li>
               </ul>
