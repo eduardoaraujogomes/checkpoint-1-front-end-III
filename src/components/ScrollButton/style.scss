@@ -1,0 +1,11 @@
+.buttonToTop {
+  position: fixed;
+  left: 50%;
+  bottom: 20px;
+  background-color: transparent;
+  border: none;
+  font-size: 3rem;
+  z-index: 1;
+  cursor: pointer;
+  color: var(--primary);
+}
