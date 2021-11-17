@@ -3,6 +3,7 @@ import Banner from './components/Banner';
 import About from './components/About';
 import Tecnologies from './components/Technologies';
 import ScrollButton from './components/ScrollButton';
+import Footer from './components/Footer';
 import './App.scss';
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <About />
       <ScrollButton />
       <Tecnologies />
+      <Footer />
     </>
   );
 }

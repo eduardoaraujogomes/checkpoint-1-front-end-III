@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import './style.scss';
 import Svg from '../Svg';
 import logo from '../../assets/logo.png';
-import { recValue1, recValue2 } from './recValues';
+import { firstSvg, secondSvg } from './svgValues';
 
 function Header() {
-  const [rec, setRec] = useState(recValue1);
+  const [svgVal, setSvgVal] = useState(firstSvg);
 
   const change = () => {
-    setRec(rec === recValue1 ? recValue2 : recValue1);
+    setSvgVal(svgVal === firstSvg ? secondSvg : firstSvg);
   };
 
   return (
@@ -29,7 +29,7 @@ function Header() {
               aria-expanded='false'
               aria-label='Toggle navigation'
             >
-              <Svg rec={rec} />
+              <Svg svgVal={svgVal} />
             </button>
             <div
               className='collapse navbar-collapse justify-content-end'
