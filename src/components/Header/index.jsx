@@ -16,7 +16,7 @@ function Header() {
       <div id='header'>
         <div className='container'>
           <nav className='navbar navbar-expand-lg '>
-            <a className='navbar-brand' href='https://'>
+            <a className='navbar-brand' href='index.html'>
               <img src={logo} alt='logo' style={{ width: '12rem' }} />
             </a>
             <button
@@ -40,7 +40,7 @@ function Header() {
                   <a
                     className='nav-link active'
                     aria-current='page'
-                    href='https://'
+                    href='#about'
                   >
                     About
                   </a>
@@ -49,7 +49,7 @@ function Header() {
                   <a
                     className='nav-link active'
                     aria-current='page'
-                    href='https://'
+                    href='#technologies'
                   >
                     Tecnologies
                   </a>
@@ -58,7 +58,7 @@ function Header() {
                   <a
                     className='nav-link active'
                     aria-current='page'
-                    href='https://'
+                    href='#projects'
                   >
                     Projects
                   </a>
@@ -67,7 +67,7 @@ function Header() {
                   <a
                     className='nav-link active'
                     aria-current='page'
-                    href='https://'
+                    href='#contact'
                   >
                     Contact
                   </a>

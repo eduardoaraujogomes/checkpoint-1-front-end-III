@@ -5,7 +5,7 @@ import './style.scss';
 export default function Projects() {
   return (
     <>
-      <Cards />
+      <Cards id='projects' />
     </>
   );
 }

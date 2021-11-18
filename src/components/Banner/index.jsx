@@ -12,13 +12,13 @@ export default function Banner() {
               <h1>Eduardo de Araújo Gomes Filho</h1>
               <h4 className='mb-4'>Full-Stack Developer</h4>
               <a
-                href='https://'
+                href='#about'
                 className='btn btn-primary button button-primary d-lg-inline-block d-block mb-lg-0 mb-2 mr-2'
               >
                 about
               </a>
               <a
-                href='https://'
+                href='#contact'
                 className='btn btn-outline-primary button d-lg-inline-block button-primary-outline d-block'
               >
                 Contact

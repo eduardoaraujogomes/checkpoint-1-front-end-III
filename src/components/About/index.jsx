@@ -5,7 +5,7 @@ import './style.scss';
 export default function About() {
   return (
     <>
-      <div id='sobre' className='block'>
+      <div id='about' className='block'>
         <div className='container'>
           <div className='row'>
             <div className='col-md-6 text-center align-self-center order-md-1 order-2'>
@@ -21,7 +21,7 @@ export default function About() {
                 and Java.
               </p>
               <a
-                href='https//'
+                href='#contact'
                 className='btn btn-primary button button-primary'
               >
                 get in touch

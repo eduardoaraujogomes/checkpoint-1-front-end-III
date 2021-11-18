@@ -8,7 +8,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 export default function Footer() {
   return (
     <>
-      <div id='footer'>
+      <div id='contact'>
         <div className='container-fluid'>
           <div className='row text-center block'>
             <h2>Contact me!</h2>

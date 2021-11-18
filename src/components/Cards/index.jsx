@@ -81,7 +81,7 @@ export default function Cards() {
 
   return (
     <>
-      <div id='portfolio' className='block'>
+      <div id='projects' className='block'>
         <div className='container text-center'>
           <h2 className='block'>Projects</h2>
           <div className='row'>
