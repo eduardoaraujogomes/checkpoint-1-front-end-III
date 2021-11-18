@@ -6,7 +6,7 @@ import Icons from '../Icons';
 export default function Tecnologies() {
   return (
     <>
-      <div id='techs'>
+      <div id='techs' className='block'>
         <div className='container'>
           <div className='row'>
             <div className='col-md-12'>
