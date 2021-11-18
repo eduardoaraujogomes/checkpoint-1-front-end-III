@@ -15,7 +15,8 @@ export default function Cards() {
       titleProject,
       imgProject,
       aboutProject,
-      techsProject
+      techsProject,
+      repoLink
     ) => {
       return {
         id: projectId,
@@ -23,6 +24,7 @@ export default function Cards() {
         img: imgProject,
         about: aboutProject,
         techs: techsProject,
+        link: repoLink,
       };
     };
     return [
@@ -31,42 +33,48 @@ export default function Cards() {
         'dt money',
         dtmoney,
         'Application to control your expenses',
-        'Typescript, React and Styled-components'
+        'Typescript, React and Styled-components',
+        'https://github.com/eduardoaraujogomes/dt-money'
       ),
       project(
         2,
         'memory game',
         memoryGame,
         'Browser memory game',
-        'Vanilla-JS, CSS5 and HTML5'
+        'Vanilla-JS, CSS5 and HTML5',
+        'https://github.com/eduardoaraujogomes/memory-game'
       ),
       project(
         3,
         'plant manager',
         plantManager,
         'Application to remind people to water their plants',
-        'Typescript, React Native and Expo'
+        'Typescript, React Native and Expo',
+        'https://github.com/eduardoaraujogomes/next-level-week-5'
       ),
       project(
         4,
         'proffy',
         proffy,
         'Online study platform',
-        'Javascript, Node and ExpressJS'
+        'Javascript, Node and ExpressJS',
+        'https://github.com/eduardoaraujogomes/nextlevelweek2'
       ),
       project(
         5,
         'studion',
         studion,
         'Web page for events company',
-        'CSS3, Javascript and HTML5'
+        'CSS3, Javascript and HTML5',
+        'https://github.com/eduardoaraujogomes/studion'
       ),
       project(
         6,
         'to-do',
         todo,
         'to-do list',
-        'Typescript, SCSS and Javascript'
+        'Typescript, SCSS and Javascript',
+        'https://github.com/eduardoaraujogomes/desafio01-trilha-react'
       ),
     ];
   };
@@ -77,10 +85,16 @@ export default function Cards() {
         <div className='container text-center'>
           <h2 className='block'>Projects</h2>
           <div className='row'>
-            {projectList().map(({ id, title, img, about, techs }) => {
+            {projectList().map(({ id, title, img, about, techs, link }) => {
               return (
                 <React.Fragment key={id}>
-                  <Card title={title} img={img} about={about} techs={techs} />
+                  <Card
+                    title={title}
+                    img={img}
+                    about={about}
+                    techs={techs}
+                    link={link}
+                  />
                 </React.Fragment>
               );
             })}

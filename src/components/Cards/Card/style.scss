@@ -1,8 +1,8 @@
 .flip-card {
   background-color: transparent;
-  width: 650px;
-  height: 350px;
-  border: 1px solid var(--black);
+  width: 350px;
+  height: 275px;
+  border: 2px solid var(--primary);
   perspective: 1000px;
 }
 
@@ -26,16 +26,35 @@
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
+
+  h2,
+  h4 {
+    color: var(--white);
+  }
+  p {
+    color: var(--text);
+  }
+
+  a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    transition: all 0.5s ease-in-out;
+    &:hover,
+    &:active {
+      color: var(--text);
+    }
+  }
 }
 
 .flip-card-front {
-  background-color: #bbb;
-  color: black;
+  background-color: var(--black);
+  color: var(--black);
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: var(--primary);
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   transform: rotateY(180deg);
 }
