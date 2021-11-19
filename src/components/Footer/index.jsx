@@ -6,6 +6,41 @@ import { BsLinkedin } from 'react-icons/bs';
 import { AiOutlineMail } from 'react-icons/ai';
 
 export default function Footer() {
+  let footerIcons = [
+    {
+      id: 1,
+      icon: (
+        <a
+          href='https://github.com/eduardoaraujogomes'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <GoMarkGithub />
+        </a>
+      ),
+    },
+    {
+      id: 2,
+      icon: (
+        <a
+          href='https://www.linkedin.com/in/eduaraujofilho/'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <BsLinkedin />
+        </a>
+      ),
+    },
+    {
+      id: 3,
+      icon: (
+        <a href='mailto:eduardo_araujo_filho@hotmail.com'>
+          <AiOutlineMail />
+        </a>
+      ),
+    },
+  ];
+
   return (
     <>
       <div id='contact'>
@@ -21,23 +56,9 @@ export default function Footer() {
             }}
           >
             <div className='d-flex flex-md-row  justify-content-around '>
-              <a
-                href='https://github.com/eduardoaraujogomes'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <GoMarkGithub />
-              </a>
-              <a
-                href='https://www.linkedin.com/in/eduaraujofilho/'
-                target='_blank'
-                rel='noreferrer'
-              >
-                <BsLinkedin />
-              </a>
-              <a href='mailto:eduardo_araujo_filho@hotmail.com'>
-                <AiOutlineMail />
-              </a>
+              {footerIcons.map(({ id, icon }) => {
+                return <React.Fragment key={id}>{icon}</React.Fragment>;
+              })}
             </div>
           </IconContext.Provider>
         </div>
